@@ -1,0 +1,7 @@
+vi:
+  users:
+    sessions:
+      login: "Đăng nhập"
+      forgot: "Quên mật khẩu"
+      sign_up: "Đăng ký"
+

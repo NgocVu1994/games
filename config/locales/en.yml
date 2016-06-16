@@ -1,0 +1,26 @@
+en:
+  name_app: "My App"
+  hello: "Hello world"
+  flashs:
+    access_denied: "Permisstion denied"
+    ủe:
+      mustlogin: "You need to login to access!"
+    mesages:
+      created: "%{model_name} ứa created successfully!"
+      not_created: "%{model_name} couldn't be created"
+      deleted: "%{model_name} ứa deleted successfully!"
+      not_deleted: "%{model_name} couldn't be deleted!"
+      updated: "%{model_name} ứa updated successfully!"
+      not_updated: "%{model_name} couldn't be updated"
+  buttons:
+    login: "Login"
+    sign_up: "Sign up"
+    new: "New"
+    create: "Create"
+    edit: "Edit"
+    update: "Update"
+    delete: "Delete"
+  layout:
+    games: "Games"
+  confirm:
+    delete: "Are you sure?"

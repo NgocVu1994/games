@@ -1,0 +1,42 @@
+<%= form_for [:admin, @game] do |f| %>
+  <div class="row">
+    <div class="row">
+      <div class="col-md-2 text-right">
+        <span><%= t "games.name" %></span>
+      </div>
+      <div class="col-md-7">
+        <%= f.text_field :name, class: "form-control", required: true %>
+      </div>
+    </div><br>
+    <div class="row">
+      <div class="col-md-2 text-right">
+        <span><%= t "games.image" %></span>
+      </div>
+      <div class="col-md-7">
+        <%= f.file_field :image %>
+      </div>
+    </div><br>
+    <div class="row">
+      <div class="col-md-2 text-right">
+        <span><%= t "games.description" %></span>
+      </div>
+      <div class="col-md-7">
+        <%= f.text_area :description, class: "form-control" %>
+      </div>
+    </div><br>
+
+    <div class="row">
+      <div class="col-md-2 text-right">
+        <span><%= t "games.content" %></span>
+      </div>
+      <div class="col-md-7">
+        <%= f.text_area :content, :class => 'ckeditor' %>
+      </div>
+    </div>
+
+    <div class="col-md-2 col-md-offset-2">
+      <%= f.submit (f.object.new_record? ? t("buttons.create")
+        : t("buttons.update")), class: "btn btn-primary" %>
+    </div>
+  </div>
+<% end %>

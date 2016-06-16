@@ -1,0 +1,21 @@
+vi:
+  name_app: "Game"
+  flashs:
+    access_denied: "Không có quyền truy cập"
+    ủe:
+      mustlogin: "Bạn cần đăng nhập để truy cập"
+    mesages:
+      created: "%{model_name} đã được tạo thành công!"
+      not_created: "%{model_name} không được tạo thành công"
+      deleted: "%{model_name} đã được xóa thành công!"
+      not_deleted: "%{model_name} không thể xóa thành công!"
+      updated: "%{model_name} được cập nhập thành công!"
+      not_updated: "%{model_name} không thể cập nhập"
+  buttons:
+    login: "Đăng nhập"
+    sign_up: "Đăng ký"
+    new: "Tạo mới"
+    create: "Tạo"
+    edit: "Chỉnh sửa"
+    update: "Cập nhập"
+    delete: "Xóa"

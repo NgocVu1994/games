@@ -1,0 +1,33 @@
+#admin-games {
+  #tbl-list-games {
+    .id {
+      width: 5%;
+    }
+
+    .name {
+      width: 15%;
+    }
+
+    .image {
+      width: 10%;
+    }
+
+    .description {
+      width: 40%;
+      max-width: 200px;
+      min-width: 150px;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+
+    .action {
+      width: 30%;
+    }
+  }
+
+  .image-game {
+    width: 140px;
+    height: 140px;
+  }
+}

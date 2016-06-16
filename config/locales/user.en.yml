@@ -1,0 +1,7 @@
+en:
+  users:
+    sessions:
+      login: "Login"
+      forgot: "Forgot password"
+      sign_up: "Sign up"
+

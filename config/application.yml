@@ -1,0 +1,5 @@
+defaults: &defaults
+  languages:
+    en: "en"
+    jp: "ja"
+

@@ -1,0 +1,5 @@
+<p><%= @game.name %></p>
+<%= image_tag @game.image_url %>
+<p><%= @game.description %></p>
+<p><%= @game.content.html_safe if @game.content.present? %></p>
+

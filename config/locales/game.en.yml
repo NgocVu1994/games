@@ -1,0 +1,12 @@
+en:
+  games:
+    name: "Name"
+    content: "Content"
+    description: "Description"
+    image: "Image"
+    table:
+      id: "ID"
+      name: "Name"
+      description: "Description"
+      image: "Image"
+

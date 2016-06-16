@@ -1,0 +1,26 @@
+#search-form {
+  form {
+    width: 100%;
+    margin-bottom: 45px;
+  }
+
+  .search {
+    padding:8px 15px;
+    border:0px solid #dbdbdb;
+  }
+
+  .button {
+    position:relative;
+    padding:6px 15px;
+    left:-8px;
+    border:2px solid #7f8c8d;
+    background-color: #7f8c8d;
+    color:#fafafa;
+  }
+
+  .button:hover {
+    background-color: #95a5a6;
+    border:2px solid #95a5a6;
+    color: #207cca;
+  }
+}
