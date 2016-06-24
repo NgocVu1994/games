@@ -1,6 +1,11 @@
-en:
+vi:
   games:
     name: "Tên"
     content: "Nội dung"
     description: "Mô tả"
     image: "Ảnh"
+    table:
+      id: "STT"
+      name: "Tên"
+      description: "Mô tả"
+      image: "Ảnh"

@@ -1,5 +1,5 @@
 vi:
-  name_app: "Game"
+  name_app: "Trò chơi"
   flashs:
     access_denied: "Không có quyền truy cập"
     ủe:
@@ -19,3 +19,7 @@ vi:
     edit: "Chỉnh sửa"
     update: "Cập nhập"
     delete: "Xóa"
+  layout:
+    games: "Trò chơi"
+  confirm:
+    delete: "Bạn có chắc chắn xóa?"

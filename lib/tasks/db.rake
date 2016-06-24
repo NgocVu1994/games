@@ -14,6 +14,13 @@ namespace :db do
         "app/assets/images/game.png"))
     end
 
+    puts "Creating version"
+    4.times do
+      name = Faker::Lorem.sentence(2)
+      description = Faker::Lorem.paragraph
+      Fabricate :version, name: name, description: description, game_id: Game.first.id
+    end
+
     puts "Success remake data"
   end
 end

@@ -1,0 +1,11 @@
+class CreateVersions < ActiveRecord::Migration
+  def change
+    create_table :versions do |t|
+      t.references :game
+      t.string :name
+      t.text :description
+
+      t.timestamps null: false
+    end
+  end
+end
