@@ -5,5 +5,7 @@ class Ability
     user ||= User.new
     can :manage, User
     can :manage, Game
+    can :manage, Version
+    can :manage, Message
   end
 end

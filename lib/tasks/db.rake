@@ -4,14 +4,14 @@ namespace :db do
     Rake::Task["db:migrate:reset"].invoke
 
     puts "Creating users"
-    Fabricate :user, email: "admin@gmail.com"
+    Fabricate :user, email: "admin@gmail.com", is_admin: 1
 
     puts "Creating games"
     10.times do
       name = Faker::Lorem.sentence(3)
       description = Faker::Lorem.paragraph
       Fabricate :game, name: name, description: description, image: File.open(File.join(Rails.root,
-        "app/assets/images/game.png"))
+        "app/assets/images/3.jpg"))
     end
 
     puts "Creating version"

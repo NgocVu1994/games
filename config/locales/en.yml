@@ -20,7 +20,13 @@ en:
     edit: "Edit"
     update: "Update"
     delete: "Delete"
+    play: "Play now"
   layout:
     games: "Games"
+    home: "Home"
+    about_us: "About us"
+    our_game: "Our game"
+    our_team: "Our team"
+    contact_us: "Contact us"
   confirm:
     delete: "Are you sure?"

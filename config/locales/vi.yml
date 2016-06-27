@@ -19,7 +19,13 @@ vi:
     edit: "Chỉnh sửa"
     update: "Cập nhập"
     delete: "Xóa"
+    play: "Chơi ngay"
   layout:
     games: "Trò chơi"
+    home: "Trang chủ"
+    about_us: "Về chúng tôi"
+    our_game: "Trò chơi"
+    our_team: "Nhóm chúng tôi"
+    contact_us: "Liên hệ"
   confirm:
     delete: "Bạn có chắc chắn xóa?"

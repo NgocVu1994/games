@@ -1,5 +1,37 @@
-<p><%= @game.name %></p>
-<%= image_tag @game.image_url %>
-<p><%= @game.description %></p>
-<p><%= @game.content.html_safe if @game.content.present? %></p>
+<div id="games">
+  <div class="row">
+    <div class="col-md-8  col-xs-12">
+      <div class="site-content" >
+        <div class="entry">
+          <div class="entry-image">
+            <%= image_tag @game.image_url, class: "img-img-img" %>
+          </div>
+          <div class="entry-meta">
+            <%= @game.name %>
+          </div>
 
+          <div class="entry-description">
+            <%= @game.description %>
+          </div>
+          <div class="entry-content">
+            <%= @game.content.html_safe if @game.content.present? %>
+          </div>
+        </div>
+      </div>
+
+      <div class="version">
+      </div>
+
+      <div class="site-content" >
+        <div class="entry-content" style="background: white;">
+          <div class="fb-comments" data-href="<%= request.original_url %>" data-width="100%" data-numposts="5">
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-4 col-xs-12">
+      <%= render "shared/facebook_page" %>
+    </div>
+  </div>
+</div>
