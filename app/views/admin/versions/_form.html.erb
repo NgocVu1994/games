@@ -1,0 +1,16 @@
+<%= form_for [:admin, @game, @version] do |f| %>
+    <div class="form-group">
+      <%= f.label :name, class: "control-label" %>
+      <%= f.text_field :name, class: "form-control" %>
+    </div>
+    <%= f.hidden_field :game_id, value: @game.id %>
+
+    <div class="form-group">
+      <%= f.label :description, class: "control-label" %>
+      <%= f.text_area :description, :class => 'ckeditor' %>
+    </div>
+  </div>
+
+  <%= f.submit (f.object.new_record? ? t("buttons.create")
+    : t("buttons.update")), class: "btn btn-primary" %>
+<% end %>

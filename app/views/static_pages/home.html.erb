@@ -40,7 +40,11 @@
                 <li><a class="menu" href="#service"><%= t "layout.our_game" %></a></li>
                 <li><a class="menu" href="#team"><%= t "layout.our_team" %></a></li>
 <!--            <li><a class="menu" href="#contact"> contact us</a></li>
--->              <li  class="dropdown">
+-->
+                <% if current_user.present? %>
+                  <li><%= link_to "Admin Site", admin_games_path %></li>
+                <% end %>
+                <li  class="dropdown">
                   <a href="#" class="dropdown-toggle" data-toggle="dropdown">
                     <%= image_tag I18n.locale, size: Settings.flag_size, class:"img-language" %>
                       <span class="caret"></span>
@@ -190,7 +194,7 @@
         <% @games.each do |game| %>
           <div class="col-md-4">
             <div class="single-service">
-              <%= image_tag game.image_url, class: "img-responsive" %>
+              <%= link_to image_tag(game.image_url, class: "img-game-static-page"), game_path(game) %>
               <h3><%= link_to game.name, game_path(game), class:"name-game" %></h3>
             </div>
           </div>

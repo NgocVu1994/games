@@ -13,21 +13,8 @@
           <div class="entry-description">
             <%= @game.description %>
           </div>
-          <div class="entry-content">
+          <div class="entry-image">
             <%= @game.content.html_safe if @game.content.present? %>
-            <ul class=tabs>
-              <% @game.versions.each_with_index do |version, index| %>
-                <li>
-                  <input type=radio name=tabs id=tab<%= index %> checked>
-                  <label for="tab<%= index %>"><%= version.name %></label>
-                  <div id="tab-content<%= index %>" class=tab-content>
-                    <p>
-                       <%= version.description %>
-                    </p>
-                  </div>
-                </li>
-              <% end %>
-            </ul>
           </div>
         </div>
       </div>

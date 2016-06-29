@@ -7,12 +7,30 @@ namespace :db do
     Fabricate :user, email: "admin@gmail.com", is_admin: 1
 
     puts "Creating games"
-    10.times do
       name = Faker::Lorem.sentence(3)
       description = Faker::Lorem.paragraph
       Fabricate :game, name: name, description: description, image: File.open(File.join(Rails.root,
-        "app/assets/images/3.jpg"))
-    end
+        "app/assets/images/11.png"))
+
+      name = Faker::Lorem.sentence(3)
+      description = Faker::Lorem.paragraph
+      Fabricate :game, name: name, description: description, image: File.open(File.join(Rails.root,
+        "app/assets/images/12.jpg"))
+
+      name = Faker::Lorem.sentence(3)
+      description = Faker::Lorem.paragraph
+      Fabricate :game, name: name, description: description, image: File.open(File.join(Rails.root,
+        "app/assets/images/13.jpg"))
+
+      name = Faker::Lorem.sentence(3)
+      description = Faker::Lorem.paragraph
+      Fabricate :game, name: name, description: description, image: File.open(File.join(Rails.root,
+        "app/assets/images/14.jpg"))
+
+      name = Faker::Lorem.sentence(3)
+      description = Faker::Lorem.paragraph
+      Fabricate :game, name: name, description: description, image: File.open(File.join(Rails.root,
+        "app/assets/images/15.jpg"))
 
     puts "Creating version"
     4.times do

@@ -11,6 +11,10 @@ class Admin::GamesController < ApplicationController
     end
   end
 
+  def show
+    @version = Version.new
+  end
+
   def update
     if @game.update_attributes game_params
       flash[:success] = flash_message "updated"
@@ -23,11 +27,11 @@ class Admin::GamesController < ApplicationController
 
   def destroy
     if @game.destroy
-      flash[:success] = flash_message "deleted"
-    else
-      flash[:failed] = flash_message "failed"
+      respond_to do |format|
+        format.html {redirect_to admin_games_path}
+        format.js
+      end
     end
-    redirect_to admin_games_path
   end
 
   private

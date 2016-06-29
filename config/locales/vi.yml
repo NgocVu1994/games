@@ -22,6 +22,7 @@ vi:
     play: "Chơi ngay"
   layout:
     games: "Trò chơi"
+    messages: "Tin nhắn"
     home: "Trang chủ"
     about_us: "Về chúng tôi"
     our_game: "Trò chơi"

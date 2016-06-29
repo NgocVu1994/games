@@ -3,11 +3,10 @@ Rails.application.routes.draw do
 
   root "static_pages#home"
   resources :games
-  resources :messages do
-    resources :versions
-  end
+  resources :messages
 
   namespace :admin do
+    resources :users
     resources :games do
       resources :versions
     end

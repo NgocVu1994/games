@@ -4,6 +4,8 @@ vi:
     content: "Nội dung"
     description: "Mô tả"
     image: "Ảnh"
+    create: "Trò chơi mới"
+    edit: "Chỉnh sửa trò chơi"
     table:
       id: "STT"
       name: "Tên"

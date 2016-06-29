@@ -1,0 +1,13 @@
+<tr id="version_<%= version.id %>">
+  <td class="id"><%= index + 1 %></td>
+  <td class="name"><%= link_to version.name, admin_game_version_path(@game, version) %></td>
+  <td class="description"><%= version.description.html_safe %></td>
+  <td class="action">
+    <a href="<%= edit_admin_game_version_path @game, version %>" class="btn btn-primary btn-xs">
+      <i class="fa fa-pencil" aria-hidden="true"></i></a>
+    <a href="<%= admin_game_version_path(@game, version) %>",
+      data-method="delete", data-remote="true" data-confirm="<%= t "confirm.delete" %>" class="btn btn-danger btn-xs">
+      <span class="glyphicon glyphicon-remove"></span>
+    </a>
+  </td>
+</tr>

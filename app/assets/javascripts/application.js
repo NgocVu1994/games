@@ -12,8 +12,9 @@
 //
 //= require jquery
 //= require jquery_ujs
-//= require ckeditor-jquery
 //= require bootstrap
+//= require bootstrap-sprockets
+//= require ckeditor-jquery
 //= require_tree .
 //= require i18n
 //= require i18n/translations

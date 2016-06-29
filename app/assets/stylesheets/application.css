@@ -13,6 +13,7 @@
  *= require_tree .
  *= require_self
  *= require admin/games
+ *= require admin/versions
  *= require games
  */
 

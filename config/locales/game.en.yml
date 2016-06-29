@@ -4,6 +4,8 @@ en:
     content: "Content"
     description: "Description"
     image: "Image"
+    create: "New Game"
+    edit: "Edit Game"
     table:
       id: "ID"
       name: "Name"

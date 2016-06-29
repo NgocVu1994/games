@@ -1,5 +1,5 @@
 #admin-games {
-  padding-top: 46px;
+  padding-top: 100px;
   #tbl-list-games {
     .id {
       width: 5%;
@@ -34,6 +34,7 @@
 }
 
 #games {
+  padding-top: 100px;
   .entry {
     padding-left: 15px;
   }
@@ -47,6 +48,10 @@
 
   .entry-content {
 
+  }
+
+  .drop-down {
+    float: right;
   }
 
   .img-img-img {
@@ -120,4 +125,37 @@
 #new-game {
   padding-top: 100px;
 
+}
+
+#edit-game {
+  padding-top: 100px;
+}
+
+#tbl-list-versions{
+  .id {
+      width: 5%;
+    }
+
+    .name {
+      width: 35%;
+    }
+
+    .description {
+      width: 50%;
+      max-width: 200px;
+      min-width: 150px;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+
+    .action {
+      width: 10%;
+    }
+}
+
+
+.img-game-static-page {
+  height: 201px;
+  width: 350px;
 }
